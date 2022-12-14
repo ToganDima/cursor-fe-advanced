@@ -27,11 +27,11 @@ while (!numberIsCorrect) {
 let skipEvenNumbers = confirm("Пропускати парні числа при сумуванні?");
 let result = 0;
 
-for (firstNumber; firstNumber <= secondNumber; firstNumber ++) {
+for (let i = firstNumber; i <= secondNumber; i++) {
     if (skipEvenNumbers) {
-        result += (firstNumber % 2 === 0) ? 0 : firstNumber; 
+        result += (i % 2 === 0) ? 0 : i; 
     } else {
-        result += firstNumber;
+        result += i;
     }
 }
 

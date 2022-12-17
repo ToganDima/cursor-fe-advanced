@@ -1,27 +1,14 @@
-let firstNumber = 0;
-let secondNumber = 0;
 
-let numberIsCorrect = false;
-let errorMsg = "Введено некоректні дані!";
+let firstNumber = Number(prompt("Введіть перше число:"));
 
-while (!numberIsCorrect) {
-    firstNumber = Number(prompt("Введіть перше число:"));
-    if (isNaN(firstNumber) || !Number.isInteger(firstNumber)) {
-        alert(errorMsg);
-    } else {
-        numberIsCorrect = true;
-    }
+while (firstNumber <= 0 || isNaN(firstNumber) || !Number.isInteger(firstNumber)) {
+    firstNumber = Number(prompt("Некоретні дані! Введіть ціле та більше 0 число:"));
 }
 
-numberIsCorrect = false;
+let secondNumber = Number(prompt("Введіть друге число:"));
 
-while (!numberIsCorrect) {
-    secondNumber = Number(prompt("Введіть друге число:"));
-    if (isNaN(secondNumber) || !Number.isInteger(secondNumber)) {
-        alert(errorMsg);
-    } else {
-        numberIsCorrect = true;
-    }
+while (secondNumber <= 0 || isNaN(secondNumber) || !Number.isInteger(secondNumber) || secondNumber <= firstNumber) {
+    secondNumber = Number(prompt("Некоретні дані! Введіть ціле, більше за перше та більше 0 число:"));
 }
 
 let skipEvenNumbers = confirm("Пропускати парні числа при сумуванні?");

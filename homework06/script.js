@@ -86,7 +86,7 @@ function getBestStudent(studentsArr) {
 console.log('Function #5: ', getBestStudent(students));
 
 function calculateWordLetters(str = '') {
-    const wordLetters = Array.from(str).reduce((resObj, curVal) => {
+    const wordLetters = Array.from(str.toLocaleLowerCase()).reduce((resObj, curVal) => {
         if (resObj[curVal]) {
             resObj[curVal] +=1;
         } else {
@@ -97,4 +97,4 @@ function calculateWordLetters(str = '') {
     return wordLetters;
 }
 
-console.log('Function #6: ', calculateWordLetters('test'));
+console.log('Function #6: ', calculateWordLetters('Test'));

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Homework #12</title>
+</head>
+<body>
+    
+    <div class="header">
+        <div class="films">
+            <label for="film-id" class="film-label">Film number</label>
+            <input type="number" id="film-id" value="1" min="1">
+            <button id="hero-btn">Get information</button>
+            <span class="film-error"></span>
+        </div>
+        <div class="head-lang">
+            <select id="lang-select">
+                <option value="english" selected>English</option>
+                <option value="wookiee">Wookiee</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="container">    
+        <div class="persons">
+        </div>
+        <div class="planets">
+            <h2>Planets</h2>
+            <div class="planets-btn">
+                <button id="prev-page">Prev</button>
+                <button id="next-page">Next</button>
+            </div>
+            <div class="planets-list">
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/personImgObject.js"></script>
+    <script src="./scripts/script.js"></script>
+
+</body>
+</html>

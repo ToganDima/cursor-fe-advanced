@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#size-up,
+#size-down {
+    width: 100px;
+    height: 50px;
+
+    font-size: 18px;
+
+    border-radius: 5px;
+    border: none;
+}
+
+#size-up:hover,
+#size-down:hover {
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.font-text {
+    margin: 0px 10px;
+}

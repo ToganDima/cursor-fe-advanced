@@ -3,6 +3,10 @@ let battery70Ah = 15.678;
 let battery150Ah = 123.965;
 let battery100Ah = 90.2345;
 
+function getMaxPrice(p1, p2, p3) {
+    return Math.max(battery70Ah, battery150Ah, battery100Ah);
+}
+
 let maxPrice = Math.max(battery70Ah, battery150Ah, battery100Ah);
 document.writeln(`<p>Максимальна ціна: ${maxPrice}</p>`);
 

@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(238, 233, 238);
+}
+
+.container {
+    width: 100%;
+}
+
+.main-box {
+    margin: 50px auto;
+    width: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+}
+
+.images-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}

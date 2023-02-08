@@ -12,14 +12,22 @@ while (secondNumber <= 0 || isNaN(secondNumber) || !Number.isInteger(secondNumbe
 }
 
 let skipEvenNumbers = confirm("Пропускати парні числа при сумуванні?");
-let result = 0;
 
-for (let i = firstNumber; i <= secondNumber; i++) {
-    if (skipEvenNumbers) {
-        result += (i % 2 === 0) ? 0 : i; 
-    } else {
-        result += i;
+function getSum(f1, f2, skip) {
+
+    let result = 0;
+
+    for (let i = f1; i <= f2; i++) {
+        if (skip) {
+            result += (i % 2 === 0) ? 0 : i;
+        } else {
+            result += i;
+        }
     }
+
+    return result;
+    
 }
 
-document.writeln(`Сума чисел: ${result}`);
+let sum = getSum(firstNumber, secondNumber, skipEvenNumbers);
+document.writeln(`Сума чисел: ${sum}`);
